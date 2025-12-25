@@ -1,0 +1,108 @@
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', sans-serif;
+    transition: background 0.4s ease, color 0.4s ease; /* Smooth transition for theme */
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    background: #1a1a1a;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+nav ul li { margin-left: 25px; }
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* Theme Button Styling */
+.theme-btn {
+    padding: 8px 18px;
+    background: #00d2ff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #1a1a1a;
+}
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    background: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+/* DARK MODE CLASSES */
+body.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-theme .about, body.dark-theme footer {
+    background-color: #1e1e1e;
+}
+
+body.dark-theme h2 { color: #00d2ff; }
+
+body.dark-theme .contact-form input, 
+body.dark-theme .contact-form textarea {
+    background: #2c2c2c;
+    color: white;
+    border: 1px solid #444;
+}
+
+/* Common Styles */
+section { padding: 80px 10%; text-align: center; }
+.about { background: #f4f4f4; }
+.about-line { width: 50px; height: 4px; background: #00d2ff; margin: 10px auto 30px; }
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #00d2ff;
+    color: #1a1a1a;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.btn:hover { transform: translateY(-3px); background: white; }
+
+.contact-form { display: flex; flex-direction: column; max-width: 600px; margin: auto; gap: 15px; }
+.contact-form input, .contact-form textarea { padding: 15px; border-radius: 8px; border: 1px solid #ccc; }
+
+footer { padding: 20px; background: #1a1a1a; color: white; }
